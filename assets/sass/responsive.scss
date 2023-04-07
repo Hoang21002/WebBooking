@@ -1,6 +1,87 @@
-@media (min-width : 740px) and (max-width : 1023px){
+@media (min-width : 1024px){
     
     html{
-        font-size: 40%;
+        font-size: 62.5%;
     }
+
+    .menu-bnt{
+        display: none;
+    }
+}
+
+@media (min-width : 740px) and (max-width : 1023px)
+{
+    
+    html{
+        font-size: 55.5%;
+    }
+
+    header{
+        nav{
+
+            .nav-item{
+                position: absolute;
+                left: 0;
+                top: 99%;               
+                background-color: $second-color;
+                clip-path: polygon(0 0, 0 0, 100% 0);
+        
+                    &.active{
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                
+                .nav-list{
+                    display: block;
+                    margin: 2rem;
+                }
+            }
+        
+            .nav-bnt{
+                display: inherit;
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width : 739px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    header {
+
+        nav{
+
+            .nav-item{
+                position: absolute;
+                left: 0;
+                top: 99%;
+                
+                clip-path: polygon(0 0, 0 0, 100% 0);
+        
+                &.active{
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+        
+                .nav-list{
+                    display: block;
+                    margin: 2rem;
+        
+                }
+            }
+            .nav-bnt{
+                display: inherit; 
+                
+                .bnt{
+                    margin:0 .5rem;
+                }
+               
+            }
+        }
+
+    }
+
 }

@@ -12,9 +12,58 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+  .menu-bnt {
+    display: none;
+  }
+}
 @media (min-width: 740px) and (max-width: 1023px) {
   html {
-    font-size: 40%;
+    font-size: 55.5%;
+  }
+  header nav .nav-item {
+    position: absolute;
+    left: 0;
+    top: 99%;
+    background-color: #FDFAF6;
+    clip-path: polygon(0 0, 0 0, 100% 0);
+  }
+  header nav .nav-item.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header nav .nav-item .nav-list {
+    display: block;
+    margin: 2rem;
+  }
+  header nav .nav-bnt {
+    display: inherit;
+  }
+}
+@media (max-width: 739px) {
+  html {
+    font-size: 50%;
+  }
+  header nav .nav-item {
+    position: absolute;
+    left: 0;
+    top: 99%;
+    clip-path: polygon(0 0, 0 0, 100% 0);
+  }
+  header nav .nav-item.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header nav .nav-item .nav-list {
+    display: block;
+    margin: 2rem;
+  }
+  header nav .nav-bnt {
+    display: inherit;
+  }
+  header nav .nav-bnt .bnt {
+    margin: 0 0.5rem;
   }
 }
 header {
@@ -32,6 +81,9 @@ header .nav {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+header .nav .menu-bnt {
+  font-size: 5.2rem;
+}
 header .nav .logo {
   font-size: 40px;
   color: #191919;
@@ -39,7 +91,7 @@ header .nav .logo {
 header .nav-list {
   display: inline-block;
   margin: 0 2rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #191919;
@@ -65,6 +117,12 @@ header .nav .bnt:hover {
   cursor: pointer;
   background-color: #064420;
   color: white;
+}
+
+.slider {
+  width: 100vw;
+  height: 94vh;
+  background: url(/assets/img/Astronaut\ Spacesuit\ 4K\ wallpaper.jpg) center/cover no-repeat;
 }
 
 /*# sourceMappingURL=app.css.map */
