@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  html {
+    font-size: 40%;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #E4EFE7;
+  z-index: 1000;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+header .nav .logo {
+  font-size: 40px;
+  color: #191919;
+}
+header .nav-list {
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #191919;
+}
+header .nav .bnt {
+  border-radius: 2rem;
+  width: 12rem;
+  height: 4rem;
+  margin: 0 2.5rem;
+}
+header .nav-bnt-signIn {
+  background-color: #FAF1E6;
+}
+header .nav-bnt-signUp {
+  background-color: #FDFAF6;
+}
+header .nav .nav-list:hover {
+  cursor: pointer;
+  color: #064420;
+  scale: 1.2;
+}
+header .nav .bnt:hover {
+  cursor: pointer;
+  background-color: #064420;
+  color: white;
+}
+
+/*# sourceMappingURL=app.css.map */

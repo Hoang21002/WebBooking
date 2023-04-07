@@ -1,0 +1,59 @@
+@import 'base';
+@import 'responsive';
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $third-color;
+    z-index: 1000;
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .logo{
+            font-size: 40px;
+            color: $balck-color;
+        }
+
+        &-list{
+            display: inline-block;
+            margin: 0 2rem;
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            color: $balck-color;
+        }
+
+        .bnt{
+            @include button(12rem, 4rem);
+            margin: 0 2.5rem;
+        }
+
+        &-bnt-signIn{
+            background-color: $main-color;
+        }
+
+        &-bnt-signUp{
+            background-color: $second-color;
+        }
+
+        .nav-list:hover{
+            cursor: pointer;
+            color: $fourth-color;
+            scale: 1.2;
+        }
+        .bnt:hover{
+            cursor: pointer;
+            background-color: $fourth-color;
+            color: $white-color;
+        }
+
+        
+
+    }
+}

@@ -1,0 +1,34 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+$main-color : #FAF1E6;
+$second-color :#FDFAF6;
+$third-color : #E4EFE7;
+$fourth-color: #064420;
+
+$white-color : #ffff;
+$balck-color : #191919;
+
+@mixin button ($width,$height){
+    border-radius: 2rem;
+    width: $width;
+    height: $height;
+    
+}
+
+@mixin input-field($width,$height){
+    border-radius: 20px;
+    height: $height;
+    width: $width;
+}
+
+
