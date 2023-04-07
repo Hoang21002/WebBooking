@@ -19,6 +19,12 @@
     <!-- Link JS -->
     <script src="/assets/script.js" defer></script>
 
+    <!-- Link Custom FromBooking -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="/index2.html">
+    
     <title>Document</title>
 </head>
 <body>
@@ -33,7 +39,7 @@
             <a href="" class="logo"><i class="fa-brands fa-instagram"></i></a>
            
             <div class="nav-item">
-                <a href="" class="nav-list">Home</a>
+                <a href="/index2.html" class="nav-list">Home</a>
                 <a href="" class="nav-list">Booking</a>
                 <a href="" class="nav-list">Airplane</a>
                 <a href="" class="nav-list">About</a>
@@ -50,10 +56,41 @@
        
     <!-------------------------- Silidser-------------------------------->
     <div id="slider" class="slider">
-        HOnag2
+        <video src="/assets/video/MoutainView.mp4" autoplay muted loop></video>
+        <div class="slider-content">
+            <h1>Make it's easy with Dalat <br> Booking</h1>
+            <p>From June 8th to December 30, we gonna sale off 30% for who booking on our website. There are many places to choose with best price. Let's discover and enjoy the days with this city.</p>
+        </div>
+        <div class="slider-from">
+            <form action="">
+                <div class="form-item input-number">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="input"  type="number">
+                </div>
+
+                <div class="form-item input-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input id="myID" class="input" placeholder="Check in" >
+                </div>
+
+                <div class="form-item input-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input id="myID" class="input" placeholder="Check out" >
+                </div>
+
+                <button class="btn-search">
+                    Search
+                </button>
+            </form>
+        </div>
     </div>
     <!-------------------------- Silider-------------------------------->
 
+    <!-------------------------- Container-------------------------------->
+    <div class="di">
+        
+    </div>
+    <!-------------------------- Container-------------------------------->
 
     
 </body>

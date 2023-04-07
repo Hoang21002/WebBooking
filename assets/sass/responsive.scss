@@ -1,3 +1,4 @@
+// ----------------- PC ---------------------
 @media (min-width : 1024px){
     
     html{
@@ -7,8 +8,22 @@
     .menu-bnt{
         display: none;
     }
-}
 
+    .input-number{
+        width: 10.3rem;
+    }
+    .input-date{
+        width: 20.7rem;
+    }
+    .btn-search{
+        @include button (19.7rem,5.2rem);   
+        border: 0.4rem solid $balck-color;            
+    }
+}
+// ----------------- PC ---------------------
+
+
+// ----------------- IPAD ---------------------
 @media (min-width : 740px) and (max-width : 1023px)
 {
     
@@ -22,6 +37,7 @@
             .nav-item{
                 position: absolute;
                 left: 0;
+                right: 0;
                 top: 99%;               
                 background-color: $second-color;
                 clip-path: polygon(0 0, 0 0, 100% 0);
@@ -42,9 +58,24 @@
             }
         }
     }
+    .slider{
+
+        .input-number{
+            width: 10.3rem;
+        }
+        .input-date{
+            width: 20.7rem;
+        }
+        .btn-search{
+            @include button (19.7rem,5.2rem);   
+                     
+        }
+    }
 
 }
+// ----------------- IPAD ---------------------
 
+// ----------------- MOBILE ---------------------
 @media (max-width : 739px){
     
     html{
@@ -58,8 +89,9 @@
             .nav-item{
                 position: absolute;
                 left: 0;
+                right: 0;
                 top: 99%;
-                
+                background-color: $second-color;
                 clip-path: polygon(0 0, 0 0, 100% 0);
         
                 &.active{
@@ -80,8 +112,26 @@
                 }
                
             }
-        }
-
+        }     
     }
 
+    .slider{
+
+        .input-number{
+            width: 100%;
+        }
+        .input-date{
+            width: 100%;
+        }
+        .btn-search{
+            @include button (100%,5.2rem);   
+                    
+        }
+        .form-item{
+            margin-bottom: 2rem;
+        }
+    }
+
+
 }
+// ----------------- MOBILE ---------------------

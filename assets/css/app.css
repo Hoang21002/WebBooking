@@ -19,6 +19,18 @@ html {
   .menu-bnt {
     display: none;
   }
+  .input-number {
+    width: 10.3rem;
+  }
+  .input-date {
+    width: 20.7rem;
+  }
+  .btn-search {
+    border-radius: 2rem;
+    width: 19.7rem;
+    height: 5.2rem;
+    border: 0.4rem solid #191919;
+  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   html {
@@ -27,6 +39,7 @@ html {
   header nav .nav-item {
     position: absolute;
     left: 0;
+    right: 0;
     top: 99%;
     background-color: #FDFAF6;
     clip-path: polygon(0 0, 0 0, 100% 0);
@@ -41,6 +54,17 @@ html {
   header nav .nav-bnt {
     display: inherit;
   }
+  .slider .input-number {
+    width: 10.3rem;
+  }
+  .slider .input-date {
+    width: 20.7rem;
+  }
+  .slider .btn-search {
+    border-radius: 2rem;
+    width: 19.7rem;
+    height: 5.2rem;
+  }
 }
 @media (max-width: 739px) {
   html {
@@ -49,7 +73,9 @@ html {
   header nav .nav-item {
     position: absolute;
     left: 0;
+    right: 0;
     top: 99%;
+    background-color: #FDFAF6;
     clip-path: polygon(0 0, 0 0, 100% 0);
   }
   header nav .nav-item.active {
@@ -65,13 +91,27 @@ html {
   header nav .nav-bnt .bnt {
     margin: 0 0.5rem;
   }
+  .slider .input-number {
+    width: 100%;
+  }
+  .slider .input-date {
+    width: 100%;
+  }
+  .slider .btn-search {
+    border-radius: 2rem;
+    width: 100%;
+    height: 5.2rem;
+  }
+  .slider .form-item {
+    margin-bottom: 2rem;
+  }
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #E4EFE7;
+  background-color: #FAF1E6;
   z-index: 1000;
 }
 header .nav {
@@ -120,9 +160,85 @@ header .nav .bnt:hover {
 }
 
 .slider {
-  width: 100vw;
-  height: 94vh;
-  background: url(/assets/img/Astronaut\ Spacesuit\ 4K\ wallpaper.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 6rem;
+  background: linear-gradient(350deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.slider video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1000;
+}
+.slider .slider-content {
+  position: absolute;
+  text-align: left;
+  max-width: 83.1rem;
+  color: white;
+  margin-left: 10vw;
+}
+.slider .slider-content h1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.slider .slider-content p {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.slider .slider-from {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: -7%;
+}
+.slider .slider-from form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88rem;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  background-color: #FAF1E6;
+  padding: 3.4rem;
+  flex-wrap: wrap;
+}
+.slider .slider-from form .form-item {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  height: 5.2rem;
+  border: 0.2rem solid #000000;
+  align-items: center;
+}
+.slider .slider-from form .form-item i {
+  font-size: 2.4rem;
+  margin: 0 14px 0 24px;
+}
+.slider .slider-from form .form-item input {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100%;
+}
+.slider .slider-from form .btn-search {
+  border: 0.2rem solid #191919;
+}
+.slider .slider-from form .btn-search:hover {
+  cursor: pointer;
+  background-color: #E4EFE7;
+}
+
+.di {
+  margin-top: 200px;
+  width: 100%;
+  height: 5000px;
 }
 
 /*# sourceMappingURL=app.css.map */
