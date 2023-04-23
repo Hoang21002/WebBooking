@@ -8,8 +8,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  color: #191919;
+}
+
 html {
   font-size: 62.5%;
+}
+
+::selection {
+  color: #FDFAF6;
+  background-color: #064420;
 }
 
 @media (min-width: 1024px) {
@@ -19,17 +28,30 @@ html {
   .menu-bnt {
     display: none;
   }
-  .input-number {
+  footer {
+    display: flex;
+    padding: 36px 112px 164px 112px;
+  }
+  .input-calendar-number-home {
     width: 10.3rem;
   }
-  .input-date {
+  .input-calendar-date-home {
     width: 20.7rem;
   }
-  .btn-search {
+  .btn-calendar-search {
     border-radius: 2rem;
     width: 19.7rem;
     height: 5.2rem;
     border: 0.4rem solid #191919;
+  }
+  .from-cards-home .card-home {
+    min-width: 38.4rem;
+  }
+  .container-feedback-home .cards-feedback-home {
+    flex-wrap: wrap;
+  }
+  .container-feedback-home .cards-feedback-home .card-feedback-home {
+    max-width: 36.8rem;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -54,16 +76,27 @@ html {
   header nav .nav-bnt {
     display: inherit;
   }
-  .slider .input-number {
+  footer {
+    padding-top: 36px;
+    padding-bottom: 164px;
+  }
+  footer .left-footer {
+    margin-left: 4rem;
+    margin-bottom: 64px;
+  }
+  .slider-home-calendar-from .input-calendar-number-home {
     width: 10.3rem;
   }
-  .slider .input-date {
+  .slider-home-calendar-from .input-calendar-date-home {
     width: 20.7rem;
   }
-  .slider .btn-search {
+  .slider-home-calendar-from .btn-calendar-search {
     border-radius: 2rem;
     width: 19.7rem;
     height: 5.2rem;
+  }
+  .container-feedback-home .cards-feedback-home {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 739px) {
@@ -91,19 +124,26 @@ html {
   header nav .nav-bnt .bnt {
     margin: 0 0.5rem;
   }
-  .slider .input-number {
+  footer {
+    padding-top: 36px;
+    padding-bottom: 164px;
+  }
+  .slider-home-calendar-from .input-calendar-number-home {
     width: 100%;
   }
-  .slider .input-date {
+  .slider-home-calendar-from .input-calendar-date-home {
     width: 100%;
   }
-  .slider .btn-search {
+  .slider-home-calendar-from .btn-calendar-search {
     border-radius: 2rem;
     width: 100%;
     height: 5.2rem;
   }
-  .slider .form-item {
+  .slider-home-calendar-from .from-calendar-item-home {
     margin-bottom: 2rem;
+  }
+  .container-feedback-home .cards-feedback-home {
+    flex-wrap: wrap;
   }
 }
 header {
@@ -120,6 +160,7 @@ header .nav {
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  height: 6rem;
 }
 header .nav .menu-bnt {
   font-size: 5.2rem;
@@ -130,7 +171,7 @@ header .nav .logo {
 }
 header .nav-list {
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 15px;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -140,10 +181,10 @@ header .nav .bnt {
   border-radius: 2rem;
   width: 12rem;
   height: 4rem;
-  margin: 0 2.5rem;
 }
 header .nav-bnt-signIn {
   background-color: #FAF1E6;
+  margin-right: 52px;
 }
 header .nav-bnt-signUp {
   background-color: #FDFAF6;
@@ -151,7 +192,7 @@ header .nav-bnt-signUp {
 header .nav .nav-list:hover {
   cursor: pointer;
   color: #064420;
-  scale: 1.2;
+  text-decoration: underline;
 }
 header .nav .bnt:hover {
   cursor: pointer;
@@ -159,7 +200,67 @@ header .nav .bnt:hover {
   color: white;
 }
 
-.slider {
+footer {
+  margin-top: 160px;
+  background-color: #ccc;
+  justify-content: space-between;
+}
+footer .heading-footer {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+footer .title-footer {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 326px;
+}
+footer .left-footer .img-logo-footer {
+  margin-bottom: 48px;
+}
+footer .left-footer .from-email-left-footer {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  display: flex;
+}
+footer .left-footer .from-email-left-footer .input-email-footer {
+  width: 28.8rem;
+  padding: 14px 10px 14px 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 20px 0px 0px 20px;
+}
+footer .left-footer .from-email-left-footer .btn-email-footer {
+  padding: 14px 10px 14px 10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #000000;
+  color: white;
+  width: 14rem;
+}
+footer .left-footer .name-social-footer {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+footer .left-footer .icons-social-footer {
+  display: flex;
+  gap: 50px;
+}
+footer .right-footer {
+  display: flex;
+}
+footer .right-footer .from-list-footer {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .right-footer .topic-footer {
+  margin: 0 4rem;
+}
+
+.slider-home {
   display: flex;
   align-items: center;
   position: relative;
@@ -168,38 +269,38 @@ header .nav .bnt:hover {
   margin-top: 6rem;
   background: linear-gradient(350deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
-.slider video {
+.slider-home video {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1000;
 }
-.slider .slider-content {
+.slider-home .slider-home-content {
   position: absolute;
   text-align: left;
   max-width: 83.1rem;
   color: white;
   margin-left: 10vw;
 }
-.slider .slider-content h1 {
+.slider-home .slider-home-content h1 {
   font-size: 4.8rem;
   font-weight: 800;
   line-height: 1.5;
 }
-.slider .slider-content p {
+.slider-home .slider-home-content p {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.5;
 }
-.slider .slider-from {
+.slider-home .slider-home-calendar-from {
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
   bottom: -7%;
 }
-.slider .slider-from form {
+.slider-home .slider-home-calendar-from from {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,7 +311,7 @@ header .nav .bnt:hover {
   padding: 3.4rem;
   flex-wrap: wrap;
 }
-.slider .slider-from form .form-item {
+.slider-home .slider-home-calendar-from from .from-calendar-item-home {
   display: flex;
   background-color: white;
   border-radius: 20px;
@@ -218,27 +319,166 @@ header .nav .bnt:hover {
   border: 0.2rem solid #000000;
   align-items: center;
 }
-.slider .slider-from form .form-item i {
+.slider-home .slider-home-calendar-from from .from-calendar-item-home i {
   font-size: 2.4rem;
   margin: 0 14px 0 24px;
 }
-.slider .slider-from form .form-item input {
+.slider-home .slider-home-calendar-from from .from-calendar-item-home .input-calendar-home {
   cursor: pointer;
   border-radius: 20px;
   width: 100%;
 }
-.slider .slider-from form .btn-search {
+.slider-home .slider-home-calendar-from from .btn-calendar-search {
   border: 0.2rem solid #191919;
 }
-.slider .slider-from form .btn-search:hover {
+.slider-home .slider-home-calendar-from from .btn-calendar-search:hover {
   cursor: pointer;
   background-color: #E4EFE7;
 }
 
-.di {
-  margin-top: 200px;
+.container-home {
+  margin-top: 180px;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.container-home .heading-container-home {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 44px;
+}
+.container-home .container-cards-home {
+  margin-top: 80px;
+}
+.container-home .container-cards-home .slick-initialized {
+  display: flex;
+}
+.container-home .container-cards-home .from-cards-home {
+  margin-top: 40px;
+}
+.container-home .container-cards-home .from-cards-home .slick-arrow {
+  background: none;
+}
+.container-home .container-cards-home .from-cards-home .slick-list .slick-track {
+  display: flex;
+}
+.container-home .container-cards-home .from-cards-home .card-home {
+  background-color: #ccc;
+  padding: 16px;
+  margin: 0 2.2rem;
+  border-radius: 32px;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-top-home {
   width: 100%;
-  height: 5000px;
+  margin-bottom: 20px;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-top-home .img-card-home {
+  width: 100%;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .line-hight-text-card-home {
+  margin-bottom: 20px;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .text-type-card-home {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .text-name-card-home {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .text-desc-card-home {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .text-price-card-home {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.container-home .container-cards-home .from-cards-home .card-home .card-bot-home .rate-card-home {
+  display: flex;
+}
+.container-home .container-service-home {
+  margin-top: 120px;
+}
+.container-home .container-service-home .from-service-home {
+  display: flex;
+  margin-left: 44px;
+  margin-right: 44px;
+  justify-content: space-between;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 66px;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home {
+  display: flex;
+  max-width: 68.8rem;
+  align-items: center;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .number-from-content-home {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: inline;
+  background: #ccc;
+  border-radius: 22px;
+  padding: 12px 22px;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .from-content-chil-service-home-text {
+  margin-left: 16px;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .from-content-chil-service-home-text .heading-from-content-home {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .from-content-chil-service-home-text .desc-from-content-home {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.container-home .container-service-home .from-service-home .child-from-service-home .img-from-service-home {
+  width: 100%;
+}
+.container-home .container-feedback-home {
+  margin-top: 120px;
+}
+.container-home .container-feedback-home .cards-feedback-home {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 44px;
+  margin-right: 44px;
+  gap: 32px;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home {
+  padding: 20px;
+  background: #ccc;
+  border-radius: 40px;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home {
+  display: flex;
+  align-items: center;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home .image-user-feedback-home {
+  width: 8rem;
+  clip-path: circle(50% at 50% 50%);
+  margin-right: 20px;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home .image-user-feedback-home .img-user-feedback-home {
+  width: 100%;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home .info-user-feedback-home .name-user-feedback-home {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home .info-user-feedback-home .live-user-feedback-home {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.container-home .container-feedback-home .cards-feedback-home .card-feedback-home .cmt-user-feedback-home {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,11 +4,16 @@
     outline: none; border: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
+}
+
+
+a{
+    color: #191919;
 }
 
 html{
     font-size: 62.5%;
-    
 }
 
 $main-color : #FAF1E6;
@@ -18,6 +23,13 @@ $fourth-color: #064420;
 
 $white-color : #ffff;
 $balck-color : #191919;
+
+$hight-nav : 6rem;
+
+::selection{
+    color: $second-color;
+    background-color: #064420;
+}
 
 @mixin button ($width,$height){
     border-radius: 2rem;

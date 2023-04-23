@@ -1,7 +1,7 @@
 @import 'base';
 @import 'responsive';
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,110 +12,194 @@ header{
 
     // <!-------------------------- Navigation-------------------------------->
 
-    .nav{
+    .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-left: 2rem;
-        padding-right: 2rem;      
-        .menu-bnt{
+        padding-right: 2rem;
+        height: $hight-nav;
+
+        .menu-bnt {
             font-size: 5.2rem;
         }
 
-        
 
-        .logo{
+
+        .logo {
             font-size: 40px;
             color: $balck-color;
         }
 
 
-        &-list{
+        &-list {
             display: inline-block;
-            margin: 0 2rem;
+            margin: 0 15px;
             font-size: 2rem;
             font-weight: 600;
             letter-spacing: 0.03em;
             color: $balck-color;
         }
 
-        .bnt{
+        .bnt {
             @include button(12rem, 4rem);
-            margin: 0 2.5rem;
+
         }
 
-        &-bnt-signIn{
+        &-bnt-signIn {
             background-color: $main-color;
+            margin-right: 52px;
         }
 
-        &-bnt-signUp{
+        &-bnt-signUp {
             background-color: $second-color;
         }
 
-        .nav-list:hover{
+        .nav-list:hover {
             cursor: pointer;
             color: $fourth-color;
-            scale: 1.2;
+            text-decoration: underline;
         }
-        .bnt:hover{
+
+        .bnt:hover {
             cursor: pointer;
             background-color: $fourth-color;
             color: $white-color;
         }
 
-        
+
     }
+
     // <!-------------------------- Navigation-------------------------------->
 
-    
-    
-
-
-
 }
+
+footer {
+    margin-top: 160px;
+    background-color: #ccc;
+    justify-content: space-between;
+
+    .heading-footer {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    .title-footer{
+        font-size: 2rem;
+        font-weight: 500;
+        max-width: 326px;
+    }
+
+    .left-footer {
+        
+        .img-logo-footer {
+            
+            margin-bottom: 48px;
+        }
+
+        .from-email-left-footer {
+            margin-top: 16px;
+            margin-bottom: 40px;
+            display: flex;
+
+            .input-email-footer {
+                width: 28.8rem;
+                padding: 14px 10px 14px 10px;
+                background-color: transparent;
+                font-size: 1.6rem;
+                color: #000000;
+                border: 1px solid #000000;
+                border-radius: 20px 0px 0px 20px;
+            }
+
+            .btn-email-footer {
+                padding: 14px 10px 14px 10px;
+                border-radius: 0px 20px 20px 0px;
+                background-color: #000000;
+                color: white;
+                width: 14rem;
+            }
+        }
+
+        .name-social-footer {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 28px;
+        }
+
+        .icons-social-footer {
+            display: flex;
+            gap: 50px;
+        }
+
+    }
+
+    .right-footer {
+
+        display: flex;
+
+        .from-list-footer{
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+
+            
+        }
+        .topic-footer{
+            margin: 0 4rem;
+        
+
+        }
+    }
+}
+
 // <!-------------------------- Silider-------------------------------->
-   
-.slider{
+
+.slider-home {
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
     height: 90vh;
-    margin-top: 6rem;
-    background: linear-gradient(350deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ;
+    margin-top: $hight-nav;
+    background: linear-gradient(350deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 
-    video{
+    video {
         position: absolute;
-        width: 100%; 
-        height: 100%;     
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         z-index: -1000;
     }
 
-    .slider-content{
+    .slider-home-content {
         position: absolute;
         text-align: left;
         max-width: 83.1rem;
         color: white;
         margin-left: 10vw;
-        h1{
+
+        h1 {
             font-size: 4.8rem;
             font-weight: 800;
             line-height: 1.5;
         }
-        p{                 
+
+        p {
             font-size: 3.2rem;
             font-weight: 600;
             line-height: 1.5;
         }
     }
-    .slider-from{
+
+    .slider-home-calendar-from {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: center;
         bottom: -7%;
-        form{           
+
+        from {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -124,46 +208,238 @@ header{
             border-radius: 40px;
             background-color: $main-color;
             padding: 3.4rem;
-            flex-wrap: wrap;  
-            
-            .form-item{
-                display: flex;               
-                background-color: $white-color;   
-                border-radius: 20px;      
-                height: 5.2rem;        
-                border: 0.2rem solid #000000; 
-                align-items: center;                                                        
-                i{  
+            flex-wrap: wrap;
+
+
+            .from-calendar-item-home {
+                display: flex;
+                background-color: $white-color;
+                border-radius: 20px;
+                height: 5.2rem;
+                border: 0.2rem solid #000000;
+                align-items: center;
+
+                i {
                     font-size: 2.4rem;
                     margin: 0 14px 0 24px;
                 }
 
-                input{
+                .input-calendar-home {
                     cursor: pointer;
-                    border-radius: 20px; 
-                    width: 100%;                                    
+                    border-radius: 20px;
+                    width: 100%;
                 }
             }
 
-            .btn-search{
-                border: 0.2rem solid $balck-color;   
+            .btn-calendar-search {
+                border: 0.2rem solid $balck-color;
             }
 
-            .btn-search:hover{
-                cursor: pointer;     
-                background-color: $third-color;                       
+            .btn-calendar-search:hover {
+                cursor: pointer;
+                background-color: $third-color;
             }
         }
     }
 }
+
 // <!-------------------------- Silider-------------------------------->
 
 
 
 // <!-------------------------- Container-------------------------------->
-.di{
-    margin-top: 200px;
-    width: 100%;
-    height: 5000px;
+.container-home {
+    margin-top: 180px;
+    margin-left: 36px;
+    margin-right: 36px;
+
+    .heading-container-home {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-left: 44px;
+    }
+
+    // <!-------------------------- Popular And High Rating-------------------------------->
+
+    .container-cards-home {
+        margin-top: 80px;
+
+        .slick-initialized {
+            display: flex;
+        }
+
+
+
+        .from-cards-home {
+            margin-top: 40px;
+
+            .slick-arrow {
+                background: none;
+            }
+
+            .slick-list {
+                .slick-track {
+                    display: flex;
+                    
+                }
+            }
+
+            .card-home {
+                background-color: #ccc;
+                padding: 16px;
+                margin: 0 2.2rem;
+                // margin-left: 44px;
+                border-radius: 32px;
+
+                .card-top-home {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .img-card-home {
+                        width: 100%;
+                    }
+                }
+
+                .card-bot-home {
+                    .line-hight-text-card-home {
+                        margin-bottom: 20px;
+                    }
+
+                    .text-type-card-home {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+
+                    .text-name-card-home {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+
+                    .text-desc-card-home {
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+
+                    .text-price-card-home {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                    }
+
+                    .rate-card-home {
+                        display: flex;
+
+                        .img-rate-card-home {}
+                    }
+                }
+            }
+        }
+    }
+
+    // <!-------------------------- We Offer The Best-------------------------------->
+    .container-service-home {
+        margin-top: 120px;
+
+        .from-service-home {
+            display: flex;
+            margin-left: 44px;
+            margin-right: 44px;
+            justify-content: space-between;
+
+            .child-from-service-home {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 66px;
+
+                .from-content-chil-service-home {
+                    display: flex;
+                    max-width: 68.8rem;
+                    align-items: center;
+
+                    .number-from-content-home {
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        display: inline;
+                        background: #ccc;
+                        border-radius: 22px;
+                        padding: 12px 22px;
+                    }
+
+                    .from-content-chil-service-home-text {
+                        margin-left: 16px;
+
+                        .heading-from-content-home {
+                            font-size: 3.2rem;
+                            font-weight: 600;
+                        }
+
+                        .desc-from-content-home {
+                            font-size: 2rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .img-from-service-home {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // <!-------------------------- FeedBack -------------------------------->
+    .container-feedback-home {
+        margin-top: 120px;
+        .cards-feedback-home {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 44px;
+            margin-right: 44px;
+            gap: 32px;
+
+            .card-feedback-home {
+                padding: 20px;
+                background: #ccc;
+                border-radius: 40px;
+
+                .card-user-feedback-home {
+                    display: flex;
+                    align-items: center;
+
+                    .image-user-feedback-home {
+                        width: 8rem;
+                        clip-path: circle(50% at 50% 50%);
+                        margin-right: 20px;
+
+                        .img-user-feedback-home {
+                            width: 100%;
+                        }
+                    }
+
+                    .info-user-feedback-home {
+                        .name-user-feedback-home {
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                        }
+
+                        .live-user-feedback-home {
+                            font-size: 2rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .cmt-user-feedback-home {
+                    text-align: left;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
 }
+
 // <!-------------------------- Container-------------------------------->
