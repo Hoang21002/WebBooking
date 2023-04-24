@@ -1,6 +1,54 @@
 @import 'base';
 @import 'responsive';
 
+.text-heading1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+.text-heading2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text-heading3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.text-heading4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.text-common-sub {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.text-common-lab {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.text-body1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.text-body2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+.text-caption {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
 header {
     position: fixed;
     top: 0;
@@ -24,26 +72,19 @@ header {
             font-size: 5.2rem;
         }
 
-
-
         .logo {
             font-size: 40px;
             color: $balck-color;
         }
 
-
         &-list {
             display: inline-block;
             margin: 0 15px;
-            font-size: 2rem;
-            font-weight: 600;
-            letter-spacing: 0.03em;
             color: $balck-color;
         }
 
         .bnt {
             @include button(12rem, 4rem);
-
         }
 
         &-bnt-signIn {
@@ -67,7 +108,6 @@ header {
             color: $white-color;
         }
 
-
     }
 
     // <!-------------------------- Navigation-------------------------------->
@@ -79,20 +119,14 @@ footer {
     background-color: #ccc;
     justify-content: space-between;
 
-    .heading-footer {
-        font-size: 2.4rem;
-        font-weight: 700;
-    }
-    .title-footer{
-        font-size: 2rem;
-        font-weight: 500;
+
+    .title-footer {
         max-width: 326px;
     }
 
     .left-footer {
-        
+
         .img-logo-footer {
-            
             margin-bottom: 48px;
         }
 
@@ -105,7 +139,6 @@ footer {
                 width: 28.8rem;
                 padding: 14px 10px 14px 10px;
                 background-color: transparent;
-                font-size: 1.6rem;
                 color: #000000;
                 border: 1px solid #000000;
                 border-radius: 20px 0px 0px 20px;
@@ -121,8 +154,6 @@ footer {
         }
 
         .name-social-footer {
-            font-size: 1.6rem;
-            font-weight: 500;
             margin-bottom: 28px;
         }
 
@@ -134,26 +165,27 @@ footer {
     }
 
     .right-footer {
-
         display: flex;
 
-        .from-list-footer{
+        .from-list-footer {
             gap: 16px;
             display: flex;
             flex-direction: column;
             margin-top: 40px;
-
-            
         }
-        .topic-footer{
-            margin: 0 4rem;
-        
 
+        .topic-footer {
+            margin: 0 4rem;
         }
     }
 }
 
-// <!-------------------------- Silider-------------------------------->
+
+
+
+
+
+// <!-------------------------- Silider-Home -------------------------------->
 
 .slider-home {
     display: flex;
@@ -179,17 +211,6 @@ footer {
         color: white;
         margin-left: 10vw;
 
-        h1 {
-            font-size: 4.8rem;
-            font-weight: 800;
-            line-height: 1.5;
-        }
-
-        p {
-            font-size: 3.2rem;
-            font-weight: 600;
-            line-height: 1.5;
-        }
     }
 
     .slider-home-calendar-from {
@@ -199,7 +220,7 @@ footer {
         justify-content: center;
         bottom: -7%;
 
-        from {
+        form {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -220,8 +241,8 @@ footer {
                 align-items: center;
 
                 i {
-                    font-size: 2.4rem;
                     margin: 0 14px 0 24px;
+                    font-size: 16px;
                 }
 
                 .input-calendar-home {
@@ -243,19 +264,15 @@ footer {
     }
 }
 
-// <!-------------------------- Silider-------------------------------->
 
 
-
-// <!-------------------------- Container-------------------------------->
+// <!-------------------------- Container-Home-------------------------------->
 .container-home {
     margin-top: 180px;
     margin-left: 36px;
     margin-right: 36px;
 
     .heading-container-home {
-        font-size: 4rem;
-        font-weight: 700;
         margin-left: 44px;
     }
 
@@ -268,8 +285,6 @@ footer {
             display: flex;
         }
 
-
-
         .from-cards-home {
             margin-top: 40px;
 
@@ -280,15 +295,14 @@ footer {
             .slick-list {
                 .slick-track {
                     display: flex;
-                    
                 }
             }
 
             .card-home {
+
                 background-color: #ccc;
                 padding: 16px;
                 margin: 0 2.2rem;
-                // margin-left: 44px;
                 border-radius: 32px;
 
                 .card-top-home {
@@ -305,30 +319,9 @@ footer {
                         margin-bottom: 20px;
                     }
 
-                    .text-type-card-home {
-                        font-size: 1.2rem;
-                        font-weight: 500;
-                    }
-
-                    .text-name-card-home {
-                        font-size: 2rem;
-                        font-weight: 700;
-                    }
-
-                    .text-desc-card-home {
-                        font-size: 2rem;
-                        font-weight: 500;
-                    }
-
-                    .text-price-card-home {
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                    }
 
                     .rate-card-home {
                         display: flex;
-
-                        .img-rate-card-home {}
                     }
                 }
             }
@@ -358,9 +351,6 @@ footer {
                     align-items: center;
 
                     .number-from-content-home {
-                        font-size: 2.4rem;
-                        font-weight: 700;
-                        display: inline;
                         background: #ccc;
                         border-radius: 22px;
                         padding: 12px 22px;
@@ -368,16 +358,6 @@ footer {
 
                     .from-content-chil-service-home-text {
                         margin-left: 16px;
-
-                        .heading-from-content-home {
-                            font-size: 3.2rem;
-                            font-weight: 600;
-                        }
-
-                        .desc-from-content-home {
-                            font-size: 2rem;
-                            font-weight: 500;
-                        }
                     }
                 }
 
@@ -391,6 +371,7 @@ footer {
     // <!-------------------------- FeedBack -------------------------------->
     .container-feedback-home {
         margin-top: 120px;
+
         .cards-feedback-home {
             margin-top: 40px;
             display: flex;
@@ -417,24 +398,10 @@ footer {
                             width: 100%;
                         }
                     }
-
-                    .info-user-feedback-home {
-                        .name-user-feedback-home {
-                            font-size: 2.4rem;
-                            font-weight: 700;
-                        }
-
-                        .live-user-feedback-home {
-                            font-size: 2rem;
-                            font-weight: 500;
-                        }
-                    }
                 }
 
                 .cmt-user-feedback-home {
                     text-align: left;
-                    font-size: 1.6rem;
-                    font-weight: 500;
                 }
             }
         }
@@ -442,4 +409,90 @@ footer {
 
 }
 
-// <!-------------------------- Container-------------------------------->
+
+
+// <!-------------------------- Container-Booking -------------------------------->
+
+.container-booking {
+    margin-top: calc($hight-nav + 80px);
+    margin-left: 36px;
+    margin-right: 36px;
+    
+    .search-booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input-filter-search-booking {
+            display: flex;
+            align-items: center;
+            width: 80vw;
+            .box-input-search-booking {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                background: #ccc;
+                padding: 10px 20px;
+                border-radius: 20px; 
+                margin: 0 164px;            
+                .icon-search-booking {
+                    color: wheat;
+                }
+
+                .input-search-booking {
+                    width: 100%;
+                    background-color: transparent;
+                    color: white;
+                    margin-left: 10px;
+                }
+
+                .input-search-booking::placeholder {
+                    color: white;
+                }
+            }
+        }
+
+        .categories-search-booking {
+            display: flex;
+            text-align: center;
+            margin-top: 80px;
+
+            .card-categories-search-booking {
+                margin-left: 4rem;
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .content-container-booking {
+        margin-left: 44px;
+        margin-right: 44px;
+        
+        .cards-content-container-booking {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            .card-content-booking {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border-radius: 20px;
+                background-color: #ccc;
+                padding: 16px;
+                max-width: 38.4rem;             
+                .top-card-content-booking {
+                    .img-card-content-booking {
+                        width: 100%;
+                        border-radius: 20px 0px;
+                    }
+                }
+
+                .bot-card-content-booking {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
