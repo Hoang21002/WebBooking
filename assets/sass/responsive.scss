@@ -1,3 +1,7 @@
+
+
+
+
 // ----------------- PC ---------------------
 @media (min-width : 1024px){
 
@@ -51,6 +55,20 @@
     .container-about{
         .card-leader-about{
             width: 400px;
+        }
+    }
+
+    .container-contact{
+        display:flex;
+        .box-text-contact{
+            max-width: 28.5rem;
+        }
+        .box-map-contact {
+            width: 50%;
+            iframe{
+                height: 90vh;
+                width: 100%;            
+            }
         }
     }
 
@@ -147,6 +165,20 @@
         }
     }
 
+    .container-contact{
+        
+        .box-text-contact{
+            width: 100%;
+        }
+        .box-map-contact {
+            margin-top: 40px;
+            width: 100%;
+            iframe{
+                
+                width: 100%;            
+            }
+        }
+    }
 
 }
 

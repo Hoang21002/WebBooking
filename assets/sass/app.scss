@@ -67,7 +67,7 @@ header {
         padding-left: 2rem;
         padding-right: 2rem;
         height: $hight-nav;
-        
+
 
         .menu-bnt {
             font-size: 5.2rem;
@@ -78,12 +78,12 @@ header {
             color: $balck-color;
         }
 
-        &-item{
+        &-item {
             margin-left: 22rem;
         }
 
         &-list {
-    
+
             display: inline-block;
             margin: 0 15px;
             color: $balck-color;
@@ -476,6 +476,7 @@ footer {
         margin-left: 44px;
         margin-right: 44px;
         margin-top: 28px;
+
         .cards-content-container-booking {
             display: flex;
             flex-wrap: wrap;
@@ -536,6 +537,7 @@ footer {
     .container-leader-about {
         text-align: center;
         margin-top: 120px;
+
         .cards-leader-about {
             display: flex;
             margin-top: 40px;
@@ -543,8 +545,9 @@ footer {
             margin-right: 80px;
             justify-content: space-between;
             gap: 32px;
+
             .card-leader-about {
-                background: #ccc;               
+                background: #ccc;
                 padding-top: 48px;
                 padding-bottom: 48px;
                 border-radius: 20px;
@@ -552,10 +555,12 @@ footer {
                 align-items: center;
                 flex-direction: column;
                 gap: 16px;
+
                 .box-img-leader-about {
                     clip-path: circle(50% at 50% 50%);
                     max-width: 257px;
-                    .img-leader-about{
+
+                    .img-leader-about {
                         width: 100%;
                     }
                 }
@@ -565,4 +570,52 @@ footer {
 
 
     }
+}
+
+// <!-------------------------- Container-Contact -------------------------------->
+
+.container-contact {
+    margin-top: $hight-nav;
+    height: 90vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .box-contact {
+        padding: 20px 40px;
+        background-color: #ccc;
+        margin: 0 auto;
+        border-radius: 40px;
+        .box-text-contact {
+            display: flex;
+            flex-direction: column;
+
+            gap: 24px;
+
+
+            .box-input-contact {
+                .__input-email-contact {
+                    padding: 14px 10px;
+                }
+                .__input-feedback-contact {
+                    padding: 10px 14px 0 14px;
+                    resize: none;                 
+                }
+                .input-contact {
+                    margin-top: 4px;
+                    width: 100%;
+                    border-radius: 20px;
+                }
+                
+            }
+            .bnt-box-input-contact{
+                width: 100%;
+                padding: 14px 10px;
+                border-radius: 20px;
+                
+            }
+        }
+    }
+
+
 }

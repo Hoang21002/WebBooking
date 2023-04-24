@@ -53,6 +53,19 @@ html {
   .container-about .card-leader-about {
     width: 400px;
   }
+  .container-contact {
+    display: flex;
+  }
+  .container-contact .box-text-contact {
+    max-width: 28.5rem;
+  }
+  .container-contact .box-map-contact {
+    width: 50%;
+  }
+  .container-contact .box-map-contact iframe {
+    height: 90vh;
+    width: 100%;
+  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   html {
@@ -105,6 +118,16 @@ html {
     flex-wrap: wrap;
   }
   .container-about .card-leader-about {
+    width: 100%;
+  }
+  .container-contact .box-text-contact {
+    width: 100%;
+  }
+  .container-contact .box-map-contact {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .container-contact .box-map-contact iframe {
     width: 100%;
   }
 }
@@ -603,6 +626,42 @@ footer .right-footer .topic-footer {
 }
 .container-about .container-leader-about .cards-leader-about .card-leader-about .box-img-leader-about .img-leader-about {
   width: 100%;
+}
+
+.container-contact {
+  margin-top: 6rem;
+  height: 90vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-contact .box-contact {
+  padding: 20px 40px;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+.container-contact .box-contact .box-text-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container-contact .box-contact .box-text-contact .box-input-contact .__input-email-contact {
+  padding: 14px 10px;
+}
+.container-contact .box-contact .box-text-contact .box-input-contact .__input-feedback-contact {
+  padding: 10px 14px 0 14px;
+  resize: none;
+}
+.container-contact .box-contact .box-text-contact .box-input-contact .input-contact {
+  margin-top: 4px;
+  width: 100%;
+  border-radius: 20px;
+}
+.container-contact .box-contact .box-text-contact .bnt-box-input-contact {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */
