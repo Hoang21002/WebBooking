@@ -50,10 +50,16 @@ html {
   .container-feedback-home .cards-feedback-home .card-feedback-home {
     max-width: 36.8rem;
   }
+  .container-about .card-leader-about {
+    width: 400px;
+  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   html {
     font-size: 55.5%;
+  }
+  header .logo {
+    display: none;
   }
   header nav .nav-item {
     position: absolute;
@@ -95,10 +101,19 @@ html {
   .container-feedback-home .cards-feedback-home {
     flex-wrap: wrap;
   }
+  .container-about .cards-leader-about {
+    flex-wrap: wrap;
+  }
+  .container-about .card-leader-about {
+    width: 100%;
+  }
 }
 @media (max-width: 739px) {
   html {
     font-size: 50%;
+  }
+  header .logo {
+    display: none;
   }
   header nav .nav-item {
     position: absolute;
@@ -210,6 +225,9 @@ header .nav .menu-bnt {
 header .nav .logo {
   font-size: 40px;
   color: #191919;
+}
+header .nav-item {
+  margin-left: 22rem;
 }
 header .nav-list {
   display: inline-block;
@@ -510,6 +528,7 @@ footer .right-footer .topic-footer {
 .container-booking .content-container-booking {
   margin-left: 44px;
   margin-right: 44px;
+  margin-top: 28px;
 }
 .container-booking .content-container-booking .cards-content-container-booking {
   display: flex;
@@ -533,6 +552,57 @@ footer .right-footer .topic-footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.container-about {
+  margin-top: 6rem;
+}
+.container-about .content-img-container-about {
+  display: flex;
+  align-items: center;
+}
+.container-about .content-img-container-about .box-img-container-about {
+  width: 50%;
+}
+.container-about .content-img-container-about .box-img-container-about .img-container-about {
+  width: 100%;
+  display: block;
+}
+.container-about .content-img-container-about .box-content-container-about {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container-about .container-leader-about {
+  text-align: center;
+  margin-top: 120px;
+}
+.container-about .container-leader-about .cards-leader-about {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: space-between;
+  gap: 32px;
+}
+.container-about .container-leader-about .cards-leader-about .card-leader-about {
+  background: #ccc;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.container-about .container-leader-about .cards-leader-about .card-leader-about .box-img-leader-about {
+  clip-path: circle(50% at 50% 50%);
+  max-width: 257px;
+}
+.container-about .container-leader-about .cards-leader-about .card-leader-about .box-img-leader-about .img-leader-about {
+  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -48,6 +48,13 @@
         }
     }
 
+    .container-about{
+        .card-leader-about{
+            width: 400px;
+        }
+    }
+
+
 }
 
 
@@ -64,6 +71,9 @@
 
 
     header{
+        .logo{
+            display: none;
+        }
         nav{
 
             .nav-item{
@@ -118,7 +128,6 @@
     }
 
     
-
     .container-feedback-home{
         .cards-feedback-home{
             flex-wrap: wrap;
@@ -126,6 +135,15 @@
                 // width: auto;
                 
             }
+        }
+    }
+
+    .container-about{
+        .cards-leader-about{
+            flex-wrap: wrap;
+        }
+        .card-leader-about{
+            width: 100%;
         }
     }
 
@@ -144,7 +162,9 @@
     }
 
     header {
-
+        .logo{
+            display: none;
+        }
         nav{
 
             .nav-item{

@@ -67,6 +67,7 @@ header {
         padding-left: 2rem;
         padding-right: 2rem;
         height: $hight-nav;
+        
 
         .menu-bnt {
             font-size: 5.2rem;
@@ -77,7 +78,12 @@ header {
             color: $balck-color;
         }
 
+        &-item{
+            margin-left: 22rem;
+        }
+
         &-list {
+    
             display: inline-block;
             margin: 0 15px;
             color: $balck-color;
@@ -417,7 +423,7 @@ footer {
     margin-top: calc($hight-nav + 80px);
     margin-left: 36px;
     margin-right: 36px;
-    
+
     .search-booking {
         display: flex;
         flex-direction: column;
@@ -427,14 +433,16 @@ footer {
             display: flex;
             align-items: center;
             width: 80vw;
+
             .box-input-search-booking {
                 display: flex;
                 width: 100%;
                 align-items: center;
                 background: #ccc;
                 padding: 10px 20px;
-                border-radius: 20px; 
-                margin: 0 164px;            
+                border-radius: 20px;
+                margin: 0 164px;
+
                 .icon-search-booking {
                     color: wheat;
                 }
@@ -467,18 +475,20 @@ footer {
     .content-container-booking {
         margin-left: 44px;
         margin-right: 44px;
-        
+        margin-top: 28px;
         .cards-content-container-booking {
             display: flex;
             flex-wrap: wrap;
-            justify-content:space-between;
+            justify-content: space-between;
+
             .card-content-booking {
                 margin-top: 40px;
                 margin-bottom: 40px;
                 border-radius: 20px;
                 background-color: #ccc;
                 padding: 16px;
-                max-width: 38.4rem;             
+                max-width: 38.4rem;
+
                 .top-card-content-booking {
                     .img-card-content-booking {
                         width: 100%;
@@ -494,5 +504,65 @@ footer {
                 }
             }
         }
+    }
+}
+
+// <!-------------------------- Container-About -------------------------------->
+.container-about {
+    margin-top: $hight-nav;
+
+    .content-img-container-about {
+        display: flex;
+        align-items: center;
+
+        .box-img-container-about {
+            width: 50%;
+
+            .img-container-about {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .box-content-container-about {
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    .container-leader-about {
+        text-align: center;
+        margin-top: 120px;
+        .cards-leader-about {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 80px;
+            margin-right: 80px;
+            justify-content: space-between;
+            gap: 32px;
+            .card-leader-about {
+                background: #ccc;               
+                padding-top: 48px;
+                padding-bottom: 48px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 16px;
+                .box-img-leader-about {
+                    clip-path: circle(50% at 50% 50%);
+                    max-width: 257px;
+                    .img-leader-about{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+
     }
 }
