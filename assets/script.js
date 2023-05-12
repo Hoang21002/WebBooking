@@ -60,32 +60,32 @@ $(document).ready(function () {
 
 // ----------JS SEARCH ------------------
 
-// function search() {
+function search() {
 
-//     let filter = document.getElementById('find').value.toUpperCase();
+    let filter = document.getElementById('find').value.toUpperCase();
 
-//     let item = document.querySelectorAll('.card-content-booking');
+    let item = document.querySelectorAll('.card-content-booking');
     
-//     let content= document.querySelectorAll('.cards-content-container-booking');
+    let content= document.querySelectorAll('.cards-content-container-booking');
 
-//     let l = document.getElementsByTagName('h1');
-
-
-//     for (var i = 0; i <= l.length; i++) {
-
-//         let a = item[i].getElementsByTagName('h1')[0];
+    let l = document.getElementsByTagName('h1');
 
 
+    for (var i = 0; i <= l.length; i++) {
 
-//         let value = a.innerHTML || a.innerText || a.item;
+        let a = item[i].getElementsByTagName('h1')[0];
 
-//         if (value.toUpperCase().indexOf(filter) > -1) {
-//             item[i].style.display= "";
 
-//         }
-//         else {
-//             item[i].style.display = "none" ;
-//         }
-//     }
 
-// }
+        let value = a.innerHTML || a.innerText || a.item;
+
+        if (value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display= "";
+
+        }
+        else {
+            item[i].style.display = "none" ;
+        }
+    }
+
+}
