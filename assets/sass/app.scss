@@ -47,6 +47,10 @@
     font-weight: 500;
 }
 
+.text-center {
+    text-align: center;
+}
+
 
 
 header {
@@ -576,46 +580,97 @@ footer {
 
 .container-contact {
     margin-top: $hight-nav;
-    height: 90vh;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 
     .box-contact {
-        padding: 20px 40px;
-        background-color: #ccc;
-        margin: 0 auto;
-        border-radius: 40px;
+        background-color: $third-color;
+        padding: 20px;
+        margin-top: 126px;
+        display: flex;
+        width: 80%;
+
+        justify-content: space-between;
+        align-items: center;
+
         .box-text-contact {
-            display: flex;
-            flex-direction: column;
+            max-width: 54.4rem;
 
-            gap: 24px;
+        }
 
+        .box-from-contact {
+            width: 40%;
 
-            .box-input-contact {
-                .__input-email-contact {
-                    padding: 14px 10px;
-                }
-                .__input-feedback-contact {
-                    padding: 10px 14px 0 14px;
-                    resize: none;                 
-                }
-                .input-contact {
-                    margin-top: 4px;
-                    width: 100%;
-                    border-radius: 20px;
-                }
-                
-            }
-            .bnt-box-input-contact{
+            .input-from-contact {
+                margin-bottom: 40px;
+                background-color: $second-color;
                 width: 100%;
                 padding: 14px 10px;
-                border-radius: 20px;
-                
+                margin-top: 4px;
+            }
+
+            textarea {
+                margin-top: 4px;
+                resize: none;
+                background-color: $second-color;
+                height: 15.3rem;
+                width: 100%;
+                display: block;
+                padding: 14px 10px;
+            }
+
+            .btn-send-contact {
+                margin-top: 40px;
+                width: 100%;
+                padding: 14px 10px;
             }
         }
     }
 
+}
 
+.sign-up {
+    display: flex;
+
+    .from-sign-up {
+        background-color: #ccc;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 120px;
+
+        .heading-text-sign-up {
+            text-align: center;
+            margin-bottom: 44px;
+        }
+
+        .input-sign-up {
+            margin-bottom: 40px;
+            margin-top: 4px;
+            padding: 14px 10px;
+        }
+
+        .bnt-sign-up {
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 72px;
+        }
+
+        .btn-sign-in {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            margin-top: 4px;
+        }
+    }
+
+    .background-img-sign-up {
+        width: 60%;
+
+    }
 }

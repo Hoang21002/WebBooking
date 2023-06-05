@@ -53,19 +53,6 @@ html {
   .container-about .card-leader-about {
     width: 400px;
   }
-  .container-contact {
-    display: flex;
-  }
-  .container-contact .box-text-contact {
-    max-width: 28.5rem;
-  }
-  .container-contact .box-map-contact {
-    width: 50%;
-  }
-  .container-contact .box-map-contact iframe {
-    height: 90vh;
-    width: 100%;
-  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   html {
@@ -118,16 +105,6 @@ html {
     flex-wrap: wrap;
   }
   .container-about .card-leader-about {
-    width: 100%;
-  }
-  .container-contact .box-text-contact {
-    width: 100%;
-  }
-  .container-contact .box-map-contact {
-    margin-top: 40px;
-    width: 100%;
-  }
-  .container-contact .box-map-contact iframe {
     width: 100%;
   }
 }
@@ -224,6 +201,10 @@ html {
 .text-caption {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -630,38 +611,83 @@ footer .right-footer .topic-footer {
 
 .container-contact {
   margin-top: 6rem;
-  height: 90vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-contact .box-contact {
+  background-color: #E4EFE7;
+  padding: 20px;
+  margin-top: 126px;
+  display: flex;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
 }
-.container-contact .box-contact {
-  padding: 20px 40px;
-  background-color: #ccc;
-  margin: 0 auto;
-  border-radius: 40px;
-}
 .container-contact .box-contact .box-text-contact {
+  max-width: 54.4rem;
+}
+.container-contact .box-contact .box-from-contact {
+  width: 40%;
+}
+.container-contact .box-contact .box-from-contact .input-from-contact {
+  margin-bottom: 40px;
+  background-color: #FDFAF6;
+  width: 100%;
+  padding: 14px 10px;
+  margin-top: 4px;
+}
+.container-contact .box-contact .box-from-contact textarea {
+  margin-top: 4px;
+  resize: none;
+  background-color: #FDFAF6;
+  height: 15.3rem;
+  width: 100%;
+  display: block;
+  padding: 14px 10px;
+}
+.container-contact .box-contact .box-from-contact .btn-send-contact {
+  margin-top: 40px;
+  width: 100%;
+  padding: 14px 10px;
+}
+
+.sign-up {
+  display: flex;
+}
+.sign-up .from-sign-up {
+  background-color: #ccc;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: center;
+  padding: 80px 120px;
 }
-.container-contact .box-contact .box-text-contact .box-input-contact .__input-email-contact {
-  padding: 14px 10px;
+.sign-up .from-sign-up .heading-text-sign-up {
+  text-align: center;
+  margin-bottom: 44px;
 }
-.container-contact .box-contact .box-text-contact .box-input-contact .__input-feedback-contact {
-  padding: 10px 14px 0 14px;
-  resize: none;
-}
-.container-contact .box-contact .box-text-contact .box-input-contact .input-contact {
+.sign-up .from-sign-up .input-sign-up {
+  margin-bottom: 40px;
   margin-top: 4px;
-  width: 100%;
-  border-radius: 20px;
-}
-.container-contact .box-contact .box-text-contact .bnt-box-input-contact {
-  width: 100%;
   padding: 14px 10px;
-  border-radius: 20px;
+}
+.sign-up .from-sign-up .bnt-sign-up {
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 72px;
+}
+.sign-up .from-sign-up .btn-sign-in {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+.sign-up .background-img-sign-up {
+  width: 60%;
 }
 
 /*# sourceMappingURL=app.css.map */
