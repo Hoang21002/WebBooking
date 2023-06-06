@@ -211,6 +211,26 @@ html {
   text-decoration: underline;
 }
 
+.margin-top-28 {
+  margin-top: 28px;
+}
+
+.margin-top-12 {
+  margin-top: 12px;
+}
+
+.margin-bot-48 {
+  margin-bottom: 48px;
+}
+
+.margin-top-4 {
+  margin-top: 4px;
+}
+
+.margin-bot-16 {
+  margin-bottom: 16px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -750,6 +770,42 @@ footer .right-footer .topic-footer {
   border: 1px solid #000000;
   border-radius: 12px;
   width: 30%;
+}
+
+.forgot-pass {
+  display: flex;
+  height: 100vh;
+}
+.forgot-pass .background-img-forgot-pass {
+  width: 50%;
+}
+.forgot-pass .box-from-input-forgot-pass {
+  width: 50%;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 80px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass img {
+  width: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .input-forgot-pass {
+  padding: 14px 10px;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .bnt-forgot-pass {
+  margin-bottom: 24px;
+  padding: 14px 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

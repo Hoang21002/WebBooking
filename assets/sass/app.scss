@@ -50,10 +50,30 @@
 .text-center {
     text-align: center;
 }
-.text-underline{
+
+.text-underline {
     text-decoration: underline;
 }
 
+.margin-top-28{
+    margin-top: 28px;
+}
+
+.margin-top-12{
+    margin-top: 12px;
+}
+
+.margin-bot-48{
+    margin-bottom: 48px;
+}
+
+.margin-top-4{
+    margin-top: 4px;
+}
+
+.margin-bot-16{
+    margin-bottom: 16px;
+}
 
 header {
     position: fixed;
@@ -683,16 +703,19 @@ footer {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
     .from-sign-in {
         display: flex;
-        
+
         flex-direction: column;
         background-color: #ccc;
         padding: 36px;
         width: 24%;
-        .text-heading-login{
+
+        .text-heading-login {
             margin-bottom: 40px;
         }
+
         .input-sign-in {
             padding: 14px 10px;
             margin-bottom: 16px;
@@ -706,8 +729,9 @@ footer {
             .box-remempass {
                 display: flex;
                 gap: 4px;
-                .input-check-box-remem{
-                    width: 2rem;                   
+
+                .input-check-box-remem {
+                    width: 2rem;
                 }
             }
         }
@@ -716,7 +740,7 @@ footer {
             margin-top: 48px;
             display: flex;
             justify-content: space-around;
-            
+
 
             img {
                 width: 4rem;
@@ -743,4 +767,49 @@ footer {
             width: 30%;
         }
     }
+}
+
+.forgot-pass {
+    display: flex;
+    height: 100vh;
+    .background-img-forgot-pass {
+        width: 50%;
+    }
+
+    .box-from-input-forgot-pass {
+       
+        width: 50%;
+        background-color: rebeccapurple;
+        display: flex;
+        align-items: center;
+        .from-input-forgot-pass {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 80px;
+            img {
+                width: 48px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            .input-forgot-pass{
+
+                padding: 14px 10px;
+                
+            }
+            .bnt-forgot-pass{
+                margin-bottom: 24px;
+                padding: 14px 10px;
+                
+
+
+            }
+        }
+    }
+
 }
