@@ -55,10 +55,6 @@
     color: $main-color;
 }
 
-.text-black {
-    color: #191919;
-}
-
 .text-secon-color {
     color: $second-color;
 }
@@ -71,6 +67,25 @@
     color: $fourth-color;
 }
 
+.text-black {
+    color: #191919;
+}
+
+.margin-bot-16 {
+    margin-bottom: 16px;
+}
+
+.margin-top-28 {
+    margin-top: 28px;
+}
+
+.margin-bot-48 {
+    margin-bottom: 48px;
+}
+
+.margin-top-4 {
+    margin-top: 4px;
+}
 
 header {
     position: fixed;
@@ -663,7 +678,7 @@ footer {
     display: flex;
 
     .from-sign-up {
-        background-color: #ccc;
+        background-color: $main-color-ui;
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -685,15 +700,17 @@ footer {
             padding: 10px;
             border-radius: 12px;
             margin-bottom: 72px;
+            background-color: $fourth-color;
+
         }
 
         .btn-sign-in {
-            width: 40%;
+            width: 30%;
             margin-left: auto;
             margin-right: auto;
             padding: 10px;
-            border: 1px solid #000000;
-            border-radius: 12px;
+            border: 1px solid #5F7A61;
+            background-color: $main-color-ui;
             margin-top: 4px;
         }
     }
@@ -703,4 +720,139 @@ footer {
         background: url(/assets/img/sign-up.png) center/cover no-repeat;
 
     }
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: red;
+
+    .from-sign-in {
+        display: flex;
+
+        flex-direction: column;
+        background-color: $main-color-ui;
+        padding: 36px;
+        width: 24%;
+        border-radius: 40px;
+
+        .text-heading-login {
+            margin-bottom: 40px;
+        }
+
+        .input-sign-in {
+            padding: 14px 10px;
+            margin-bottom: 16px;
+            margin-top: 4px;
+        }
+
+        .box-get-pass {
+            display: flex;
+            justify-content: space-between;
+
+            .box-remempass {
+                display: flex;
+                gap: 4px;
+
+                .input-check-box-remem {
+                    width: 2rem;
+                }
+            }
+        }
+
+        .box-icon-sign-in {
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-around;
+
+
+            img {
+                width: 4rem;
+            }
+
+            // text-align: center;
+        }
+
+        .bnt-login-sign-in {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 52px;
+            padding: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            background-color: $fourth-color;
+
+        }
+
+        .btn-sign-up-sign-in {
+            margin-top: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 14px 10px;
+            border: 1px solid #5F7A61;
+            border-radius: 40px;
+            background-color: $main-color;
+            width: 30%;
+        }
+    }
+}
+
+.forgot-pass {
+    display: flex;
+    height: 100vh;
+
+    .background-img-forgot-pass {
+        width: 50%;
+        background: url(/assets/img/forgot-pass.png) center/cover no-repeat;
+    }
+
+    .box-from-input-forgot-pass {
+
+        width: 50%;
+        background-color: $main-color-ui;
+        display: flex;
+        align-items: center;
+
+        .from-input-forgot-pass {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 80px;
+
+            img {
+                width: 48px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            background-color: $main-color-ui;
+            display: flex;
+            flex-direction: column;
+
+            .input-forgot-pass {
+
+                padding: 14px 10px;
+
+            }
+
+            .bnt-forgot-pass {
+                margin-bottom: 24px;
+                padding: 14px 10px;
+            }
+
+            .bnt-forgot-pass_submit {
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+                background-color: $fourth-color;
+            }
+
+            .bnt-forgot-pass_back {
+                border: 1px solid #3C3C3C;
+                background-color: $main-color;
+            }
+        }
+    }
+
 }

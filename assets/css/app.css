@@ -211,20 +211,36 @@ html {
   color: #FFFFFF;
 }
 
-.text-black {
-  color: #191919;
-}
-
 .text-secon-color {
   color: #5F7A61;
 }
 
 .text-thirt-color {
-  color: #E4EFE7;
+  color: #3C3C3C;
 }
 
 .text-for-color {
-  color: #064420;
+  color: #1C6758;
+}
+
+.text-black {
+  color: #191919;
+}
+
+.margin-bot-16 {
+  margin-bottom: 16px;
+}
+
+.margin-top-28 {
+  margin-top: 28px;
+}
+
+.margin-bot-48 {
+  margin-bottom: 48px;
+}
+
+.margin-top-4 {
+  margin-top: 4px;
 }
 
 header {
@@ -273,12 +289,12 @@ header .nav-bnt-signUp {
 }
 header .nav .nav-list:hover {
   cursor: pointer;
-  color: #064420;
+  color: #1C6758;
   text-decoration: underline;
 }
 header .nav .bnt:hover {
   cursor: pointer;
-  background-color: #064420;
+  background-color: #1C6758;
   color: white;
 }
 
@@ -393,12 +409,12 @@ footer .right-footer .topic-footer {
   width: 100%;
 }
 .slider-home .slider-home-calendar-from form .btn-calendar-search {
-  border: 0.2rem solid #064420;
-  background-color: #064420;
+  border: 0.2rem solid #1C6758;
+  background-color: #1C6758;
 }
 .slider-home .slider-home-calendar-from form .btn-calendar-search:hover {
   cursor: pointer;
-  background-color: #E4EFE7;
+  background-color: #3C3C3C;
 }
 
 .container-home {
@@ -466,7 +482,7 @@ footer .right-footer .topic-footer {
   align-items: center;
 }
 .container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .number-from-content-home {
-  background: #064420;
+  background: #1C6758;
   border-radius: 22px;
   padding: 12px 22px;
 }
@@ -642,7 +658,7 @@ footer .right-footer .topic-footer {
   justify-content: center;
 }
 .container-contact .box-contact {
-  background-color: #E4EFE7;
+  background-color: #3C3C3C;
   padding: 20px;
   margin-top: 126px;
   display: flex;
@@ -682,7 +698,7 @@ footer .right-footer .topic-footer {
   display: flex;
 }
 .sign-up .from-sign-up {
-  background-color: #ccc;
+  background-color: #FBFBFB;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -702,19 +718,127 @@ footer .right-footer .topic-footer {
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 72px;
+  background-color: #1C6758;
 }
 .sign-up .from-sign-up .btn-sign-in {
-  width: 40%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border: 1px solid #000000;
-  border-radius: 12px;
+  border: 1px solid #5F7A61;
+  background-color: #FBFBFB;
   margin-top: 4px;
 }
 .sign-up .background-img-sign-up {
   width: 60%;
   background: url(/assets/img/sign-up.png) center/cover no-repeat;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: red;
+}
+.sign-in .from-sign-in {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBFBFB;
+  padding: 36px;
+  width: 24%;
+  border-radius: 40px;
+}
+.sign-in .from-sign-in .text-heading-login {
+  margin-bottom: 40px;
+}
+.sign-in .from-sign-in .input-sign-in {
+  padding: 14px 10px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+.sign-in .from-sign-in .box-get-pass {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in .from-sign-in .box-get-pass .box-remempass {
+  display: flex;
+  gap: 4px;
+}
+.sign-in .from-sign-in .box-get-pass .box-remempass .input-check-box-remem {
+  width: 2rem;
+}
+.sign-in .from-sign-in .box-icon-sign-in {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+.sign-in .from-sign-in .box-icon-sign-in img {
+  width: 4rem;
+}
+.sign-in .from-sign-in .bnt-login-sign-in {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 52px;
+  padding: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: #1C6758;
+}
+.sign-in .from-sign-in .btn-sign-up-sign-in {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 10px;
+  border: 1px solid #5F7A61;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  width: 30%;
+}
+
+.forgot-pass {
+  display: flex;
+  height: 100vh;
+}
+.forgot-pass .background-img-forgot-pass {
+  width: 50%;
+  background: url(/assets/img/forgot-pass.png) center/cover no-repeat;
+}
+.forgot-pass .box-from-input-forgot-pass {
+  width: 50%;
+  background-color: #FBFBFB;
+  display: flex;
+  align-items: center;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 80px;
+  background-color: #FBFBFB;
+  display: flex;
+  flex-direction: column;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass img {
+  width: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .input-forgot-pass {
+  padding: 14px 10px;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .bnt-forgot-pass {
+  margin-bottom: 24px;
+  padding: 14px 10px;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .bnt-forgot-pass_submit {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: #1C6758;
+}
+.forgot-pass .box-from-input-forgot-pass .from-input-forgot-pass .bnt-forgot-pass_back {
+  border: 1px solid #3C3C3C;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=app.css.map */
