@@ -207,6 +207,10 @@ html {
   text-align: center;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -688,6 +692,64 @@ footer .right-footer .topic-footer {
 }
 .sign-up .background-img-sign-up {
   width: 60%;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.sign-in .from-sign-in {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  padding: 36px;
+  width: 24%;
+}
+.sign-in .from-sign-in .text-heading-login {
+  margin-bottom: 40px;
+}
+.sign-in .from-sign-in .input-sign-in {
+  padding: 14px 10px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+.sign-in .from-sign-in .box-get-pass {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in .from-sign-in .box-get-pass .box-remempass {
+  display: flex;
+  gap: 4px;
+}
+.sign-in .from-sign-in .box-get-pass .box-remempass .input-check-box-remem {
+  width: 2rem;
+}
+.sign-in .from-sign-in .box-icon-sign-in {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+.sign-in .from-sign-in .box-icon-sign-in img {
+  width: 4rem;
+}
+.sign-in .from-sign-in .bnt-login-sign-in {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 52px;
+  padding: 10px;
+  border-radius: 12px;
+}
+.sign-in .from-sign-in .btn-sign-up-sign-in {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 10px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  width: 30%;
 }
 
 /*# sourceMappingURL=app.css.map */
