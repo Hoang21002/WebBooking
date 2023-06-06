@@ -51,6 +51,25 @@
     text-align: center;
 }
 
+.text-main-color {
+    color: $main-color;
+}
+
+.text-black {
+    color: #191919;
+}
+
+.text-secon-color {
+    color: $second-color;
+}
+
+.text-thirt-color {
+    color: $third-color;
+}
+
+.text-for-color {
+    color: $fourth-color;
+}
 
 
 header {
@@ -60,6 +79,7 @@ header {
     right: 0;
     background-color: $main-color;
     z-index: 1000;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 
 
     // <!-------------------------- Navigation-------------------------------->
@@ -94,12 +114,14 @@ header {
         }
 
         .bnt {
-            @include button(12rem, 4rem);
+            width: 12rem;
+            height: 4rem;
+            border: 1px solid #000000;
         }
 
         &-bnt-signIn {
             background-color: $main-color;
-            margin-right: 52px;
+            margin-right: 32px;
         }
 
         &-bnt-signUp {
@@ -126,7 +148,8 @@ header {
 
 footer {
     margin-top: 160px;
-    background-color: #ccc;
+    background-color: $main-color;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
 
 
@@ -263,7 +286,8 @@ footer {
             }
 
             .btn-calendar-search {
-                border: 0.2rem solid $balck-color;
+                border: 0.2rem solid $fourth-color;
+                background-color: $fourth-color;
             }
 
             .btn-calendar-search:hover {
@@ -310,9 +334,10 @@ footer {
 
             .card-home {
 
-                background-color: #ccc;
+                background-color: $main-color;
                 padding: 16px;
                 margin: 0 2.2rem;
+                border: 1px solid #000000;
                 border-radius: 32px;
 
                 .card-top-home {
@@ -321,6 +346,7 @@ footer {
 
                     .img-card-home {
                         width: 100%;
+
                     }
                 }
 
@@ -361,7 +387,7 @@ footer {
                     align-items: center;
 
                     .number-from-content-home {
-                        background: #ccc;
+                        background: $fourth-color;
                         border-radius: 22px;
                         padding: 12px 22px;
                     }
@@ -392,7 +418,8 @@ footer {
 
             .card-feedback-home {
                 padding: 20px;
-                background: #ccc;
+                background: $main-color;
+                box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.25);
                 border-radius: 40px;
 
                 .card-user-feedback-home {
@@ -442,9 +469,10 @@ footer {
                 display: flex;
                 width: 100%;
                 align-items: center;
-                background: #ccc;
+
                 padding: 10px 20px;
-                border-radius: 20px;
+                background: #FBFBFB;
+                border: 1px solid #000000;
                 margin: 0 164px;
 
                 .icon-search-booking {
@@ -454,12 +482,12 @@ footer {
                 .input-search-booking {
                     width: 100%;
                     background-color: transparent;
-                    color: white;
+                    color: $balck-color;
                     margin-left: 10px;
                 }
 
                 .input-search-booking::placeholder {
-                    color: white;
+                    color: $balck-color;
                 }
             }
         }
@@ -489,15 +517,16 @@ footer {
             .card-content-booking {
                 margin-top: 40px;
                 margin-bottom: 40px;
-                border-radius: 20px;
-                background-color: #ccc;
+                border: 1px solid #000000;
+                border-radius: 32px;
+                background-color: $main-color;
                 padding: 16px;
                 max-width: 38.4rem;
 
                 .top-card-content-booking {
                     .img-card-content-booking {
                         width: 100%;
-                        border-radius: 20px 0px;
+                        border-radius: 20px;
                     }
                 }
 
@@ -551,10 +580,10 @@ footer {
             gap: 32px;
 
             .card-leader-about {
-                background: #ccc;
+                background: $main-color;
                 padding-top: 48px;
                 padding-bottom: 48px;
-                border-radius: 20px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -671,6 +700,7 @@ footer {
 
     .background-img-sign-up {
         width: 60%;
+        background: url(/assets/img/sign-up.png) center/cover no-repeat;
 
     }
 }

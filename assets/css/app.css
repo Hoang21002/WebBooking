@@ -17,7 +17,7 @@ html {
 }
 
 ::selection {
-  color: #FDFAF6;
+  color: #5F7A61;
   background-color: #064420;
 }
 
@@ -39,7 +39,7 @@ html {
     width: 20.7rem;
   }
   .btn-calendar-search {
-    border-radius: 2rem;
+    border-radius: 16px;
     width: 19.7rem;
     height: 5.2rem;
     border: 0.4rem solid #191919;
@@ -66,7 +66,7 @@ html {
     left: 0;
     right: 0;
     top: 99%;
-    background-color: #FDFAF6;
+    background-color: #5F7A61;
     clip-path: polygon(0 0, 0 0, 100% 0);
   }
   header nav .nav-item.active {
@@ -94,7 +94,7 @@ html {
     width: 20.7rem;
   }
   .slider-home-calendar-from .btn-calendar-search {
-    border-radius: 2rem;
+    border-radius: 16px;
     width: 19.7rem;
     height: 5.2rem;
   }
@@ -120,7 +120,7 @@ html {
     left: 0;
     right: 0;
     top: 99%;
-    background-color: #FDFAF6;
+    background-color: #5F7A61;
     clip-path: polygon(0 0, 0 0, 100% 0);
   }
   header nav .nav-item.active {
@@ -147,7 +147,7 @@ html {
     width: 100%;
   }
   .slider-home-calendar-from .btn-calendar-search {
-    border-radius: 2rem;
+    border-radius: 16px;
     width: 100%;
     height: 5.2rem;
   }
@@ -207,13 +207,34 @@ html {
   text-align: center;
 }
 
+.text-main-color {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #191919;
+}
+
+.text-secon-color {
+  color: #5F7A61;
+}
+
+.text-thirt-color {
+  color: #E4EFE7;
+}
+
+.text-for-color {
+  color: #064420;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #FAF1E6;
+  background-color: #FFFFFF;
   z-index: 1000;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 header .nav {
   display: flex;
@@ -239,16 +260,16 @@ header .nav-list {
   color: #191919;
 }
 header .nav .bnt {
-  border-radius: 2rem;
   width: 12rem;
   height: 4rem;
+  border: 1px solid #000000;
 }
 header .nav-bnt-signIn {
-  background-color: #FAF1E6;
-  margin-right: 52px;
+  background-color: #FFFFFF;
+  margin-right: 32px;
 }
 header .nav-bnt-signUp {
-  background-color: #FDFAF6;
+  background-color: #5F7A61;
 }
 header .nav .nav-list:hover {
   cursor: pointer;
@@ -263,7 +284,8 @@ header .nav .bnt:hover {
 
 footer {
   margin-top: 160px;
-  background-color: #ccc;
+  background-color: #FFFFFF;
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
   justify-content: space-between;
 }
 footer .title-footer {
@@ -349,7 +371,7 @@ footer .right-footer .topic-footer {
   width: 88rem;
   border: 1px solid #000000;
   border-radius: 40px;
-  background-color: #FAF1E6;
+  background-color: #FFFFFF;
   padding: 3.4rem;
   flex-wrap: wrap;
 }
@@ -371,7 +393,8 @@ footer .right-footer .topic-footer {
   width: 100%;
 }
 .slider-home .slider-home-calendar-from form .btn-calendar-search {
-  border: 0.2rem solid #191919;
+  border: 0.2rem solid #064420;
+  background-color: #064420;
 }
 .slider-home .slider-home-calendar-from form .btn-calendar-search:hover {
   cursor: pointer;
@@ -402,9 +425,10 @@ footer .right-footer .topic-footer {
   display: flex;
 }
 .container-home .container-cards-home .from-cards-home .card-home {
-  background-color: #ccc;
+  background-color: #FFFFFF;
   padding: 16px;
   margin: 0 2.2rem;
+  border: 1px solid #000000;
   border-radius: 32px;
 }
 .container-home .container-cards-home .from-cards-home .card-home .card-top-home {
@@ -442,7 +466,7 @@ footer .right-footer .topic-footer {
   align-items: center;
 }
 .container-home .container-service-home .from-service-home .child-from-service-home .from-content-chil-service-home .number-from-content-home {
-  background: #ccc;
+  background: #064420;
   border-radius: 22px;
   padding: 12px 22px;
 }
@@ -465,7 +489,8 @@ footer .right-footer .topic-footer {
 }
 .container-home .container-feedback-home .cards-feedback-home .card-feedback-home {
   padding: 20px;
-  background: #ccc;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
 }
 .container-home .container-feedback-home .cards-feedback-home .card-feedback-home .card-user-feedback-home {
@@ -503,9 +528,9 @@ footer .right-footer .topic-footer {
   display: flex;
   width: 100%;
   align-items: center;
-  background: #ccc;
   padding: 10px 20px;
-  border-radius: 20px;
+  background: #FBFBFB;
+  border: 1px solid #000000;
   margin: 0 164px;
 }
 .container-booking .search-booking .input-filter-search-booking .box-input-search-booking .icon-search-booking {
@@ -514,11 +539,11 @@ footer .right-footer .topic-footer {
 .container-booking .search-booking .input-filter-search-booking .box-input-search-booking .input-search-booking {
   width: 100%;
   background-color: transparent;
-  color: white;
+  color: #191919;
   margin-left: 10px;
 }
 .container-booking .search-booking .input-filter-search-booking .box-input-search-booking .input-search-booking::placeholder {
-  color: white;
+  color: #191919;
 }
 .container-booking .search-booking .categories-search-booking {
   display: flex;
@@ -542,14 +567,15 @@ footer .right-footer .topic-footer {
 .container-booking .content-container-booking .cards-content-container-booking .card-content-booking {
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 20px;
-  background-color: #ccc;
+  border: 1px solid #000000;
+  border-radius: 32px;
+  background-color: #FFFFFF;
   padding: 16px;
   max-width: 38.4rem;
 }
 .container-booking .content-container-booking .cards-content-container-booking .card-content-booking .top-card-content-booking .img-card-content-booking {
   width: 100%;
-  border-radius: 20px 0px;
+  border-radius: 20px;
 }
 .container-booking .content-container-booking .cards-content-container-booking .card-content-booking .bot-card-content-booking {
   margin-top: 20px;
@@ -592,10 +618,10 @@ footer .right-footer .topic-footer {
   gap: 32px;
 }
 .container-about .container-leader-about .cards-leader-about .card-leader-about {
-  background: #ccc;
+  background: #FFFFFF;
   padding-top: 48px;
   padding-bottom: 48px;
-  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -632,7 +658,7 @@ footer .right-footer .topic-footer {
 }
 .container-contact .box-contact .box-from-contact .input-from-contact {
   margin-bottom: 40px;
-  background-color: #FDFAF6;
+  background-color: #5F7A61;
   width: 100%;
   padding: 14px 10px;
   margin-top: 4px;
@@ -640,7 +666,7 @@ footer .right-footer .topic-footer {
 .container-contact .box-contact .box-from-contact textarea {
   margin-top: 4px;
   resize: none;
-  background-color: #FDFAF6;
+  background-color: #5F7A61;
   height: 15.3rem;
   width: 100%;
   display: block;
@@ -688,6 +714,7 @@ footer .right-footer .topic-footer {
 }
 .sign-up .background-img-sign-up {
   width: 60%;
+  background: url(/assets/img/sign-up.png) center/cover no-repeat;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -16,8 +16,8 @@ html{
     font-size: 62.5%;
 }
 
-$main-color : #FAF1E6;
-$second-color :#FDFAF6;
+$main-color : #FFFFFF;
+$second-color :#5F7A61;
 $third-color : #E4EFE7;
 $fourth-color: #064420;
 
@@ -37,14 +37,14 @@ $hight-nav : 6rem;
 
 
 @mixin button ($width,$height){
-    border-radius: 2rem;
+    border-radius: 16px;
     width: $width;
     height: $height;
     
 }
 
 @mixin input-field($width,$height){
-    border-radius: 20px;
+    border-radius: 16px;
     height: $height;
     width: $width;
 }
