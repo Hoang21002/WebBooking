@@ -242,6 +242,10 @@ button {
   font-weight: 500;
 }
 
+.margin-right-12 {
+  margin-right: 12px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -280,6 +284,10 @@ button {
 
 .margin-bot-48 {
   margin-bottom: 48px;
+}
+
+.margin-bot-12 {
+  margin-bottom: 12px;
 }
 
 .margin-top-4 {
@@ -1160,6 +1168,12 @@ footer .right-footer .topic-footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 14px 10px;
 }
+.container-info-booking .box-body-info-booking .box-right-body-info-booking .box-price-info-booking .box-form-pay-info-booking .btn-order-pay-info-booking:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 .container-info-booking .box-body-info-booking .box-right-body-info-booking .box-price-info-booking .total-bill {
   border-top: 1px solid #000000;
   padding-top: 56px;
@@ -1203,6 +1217,93 @@ footer .right-footer .topic-footer {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+}
+
+.container-pay {
+  margin-top: calc(6rem + 44px);
+  display: flex;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.container-pay .btn-back-pay {
+  justify-content: start;
+}
+.container-pay .box-lef-body-pay-booking {
+  width: 45%;
+}
+.container-pay .box-lef-body-pay-booking .textarea-pay {
+  margin-top: 4px;
+  resize: none;
+  height: 15.3rem;
+  width: 100%;
+  display: block;
+  padding: 14px 10px;
+  border: 0.3px solid #000000;
+}
+.container-pay .box-lef-body-pay-booking .form-pay {
+  display: flex;
+  justify-content: space-between;
+}
+.container-pay .box-lef-body-pay-booking .form-pay .box-people-pay {
+  border: 1px solid #000000;
+  width: 100%;
+  padding: 14px 10px;
+  justify-content: start;
+}
+.container-pay .box-lef-body-pay-booking .form-pay .box-input-pay {
+  width: 45%;
+}
+.container-pay .box-lef-body-pay-booking .box-payment-pay {
+  display: flex;
+  justify-content: space-between;
+}
+.container-pay .box-lef-body-pay-booking .box-payment-pay .btn-payment-pay {
+  width: 20%;
+  border: 1px solid #000000;
+  padding: 14px 10px;
+  background-color: #FFFFFF;
+}
+.container-pay .box-lef-body-pay-booking .box-payment-pay .btn-payment-pay:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  color: #FFFFFF;
+  background-color: #5F7A61;
+  cursor: pointer;
+}
+.container-pay .box-right-body {
+  width: 55%;
+}
+.container-pay .box-right-body .box-price {
+  padding: 50px;
+  width: 47.8rem;
+  position: sticky;
+  background-color: #FFFFFF;
+  top: 80px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-pay .box-right-body .box-price .box-title-pirce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-pay .box-right-body .box-price .total-bill {
+  border-top: 1px solid #000000;
+  padding-top: 56px;
+}
+.container-pay .box-right-body .box-price .btn-order-pay {
+  width: 100%;
+  background-color: #1C6758;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 14px 10px;
+}
+.container-pay .box-right-body .box-price .btn-order-pay:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

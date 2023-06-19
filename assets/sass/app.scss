@@ -7,12 +7,15 @@
     gap: 10px;
     align-items: center;
 }
-button{
+
+button {
     cursor: pointer;
 }
-.text-underline{
+
+.text-underline {
     text-decoration: underline;
 }
+
 .size-20 {
     width: 2rem;
 }
@@ -28,9 +31,11 @@ button{
 .font-size-20 {
     font-size: 2rem;
 }
-.text-italic{
+
+.text-italic {
     font-style: italic;
 }
+
 .text-heading1 {
     font-size: 4.8rem;
     font-weight: 800;
@@ -76,7 +81,9 @@ button{
     font-size: 1.2rem;
     font-weight: 500;
 }
-
+.margin-right-12{
+    margin-right: 12px;
+}
 .text-center {
     text-align: center;
 }
@@ -108,11 +115,18 @@ button{
 .margin-top-28 {
     margin-top: 28px;
 }
-.margin-top-20{
+
+.margin-top-20 {
     margin-top: 20px;
 }
+
 .margin-bot-48 {
     margin-bottom: 48px;
+}
+
+.margin-bot-12 {
+    margin-bottom: 12px;
+
 }
 
 .margin-top-4 {
@@ -1115,6 +1129,7 @@ footer {
                 border-radius: 40px;
                 background: #E4EFE7;
                 padding: 56px 40px;
+
                 .card-host-info-booking {
                     padding: 20px;
                     background: $main-color;
@@ -1149,7 +1164,8 @@ footer {
                     width: 50%;
                     border: 1px solid #000000;
                 }
-                .btn-host-info-booking:hover{
+
+                .btn-host-info-booking:hover {
                     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
                     opacity: 0.8;
                     cursor: pointer;
@@ -1212,7 +1228,8 @@ footer {
                     .box-people-pay-info-booking {
                         background-color: $main-color-ui;
                         border: 1px solid #000000;
-                        .input-number-pay-info-booking{
+
+                        .input-number-pay-info-booking {
                             width: 12%;
                         }
                     }
@@ -1222,6 +1239,12 @@ footer {
                         background-color: $fourth-color;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         padding: 14px 10px;
+                    }
+                    .btn-order-pay-info-booking:hover{
+                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+                        opacity: 0.8;
+                        color: $main-color;
+                        cursor: pointer;
                     }
 
                 }
@@ -1233,17 +1256,20 @@ footer {
             }
         }
     }
-    .box-feedback-info-booking{
-        .box-cards-info-booking{
+
+    .box-feedback-info-booking {
+        .box-cards-info-booking {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 32px;
+
             .card-feedback-info-booking {
                 padding: 20px;
                 background: $main-color;
 
                 width: 30%;
+
                 .card-user-feedback-info-booking {
                     display: flex;
                     align-items: center;
@@ -1265,20 +1291,120 @@ footer {
             }
         }
     }
-    .box-map-info-booking{
-        iframe{
+
+    .box-map-info-booking {
+        iframe {
             width: 100%;
             height: 72.8rem;
         }
     }
-    .box-allyouknow-info-booking{
+
+    .box-allyouknow-info-booking {
         display: flex;
         justify-content: space-between;
+
         .topic-allyouknow {
             gap: 16px;
             display: flex;
             flex-direction: column;
             margin-top: 40px;
+        }
+    }
+}
+
+.container-pay {
+    margin-top: calc($hight-nav + 44px);
+    display: flex;
+    margin-left: 36px;
+    margin-right: 36px;
+    .btn-back-pay{
+        justify-content: start;
+    }
+    .box-lef-body-pay-booking {
+        width: 45%;
+        .textarea-pay{
+            margin-top: 4px;
+            resize: none;         
+            height: 15.3rem;
+            width: 100%;
+            display: block;
+            padding: 14px 10px;
+            border: 0.3px solid #000000;
+        }
+        .form-pay {
+            display: flex;
+            justify-content: space-between;
+
+            .box-people-pay {
+                border: 1px solid #000000;
+                width: 100%;
+                padding: 14px 10px;
+                justify-content: start;
+            }
+            
+            .box-input-pay {
+                width: 45%;
+            }
+        }
+        .box-payment-pay{
+            display: flex;
+            justify-content: space-between;
+
+            .btn-payment-pay{
+                width: 20%;
+                border: 1px solid #000000;
+                padding: 14px 10px;
+                background-color: $main-color;
+            }
+            .btn-payment-pay:hover{
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+                opacity: 0.8;
+                color: $main-color;
+                background-color: $second-color;
+                cursor: pointer;
+            }
+        }
+        .box-visa-pay{
+            
+        }
+    }
+
+    .box-right-body {
+        width: 55%;
+        
+        .box-price {
+
+            padding: 50px;
+            width: 47.8rem;
+            position: sticky;
+            background-color: $main-color;
+            top: 80px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+            margin-left: auto;
+            margin-right: auto;
+            .box-title-pirce {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .total-bill {
+                border-top: 1px solid #000000;
+                padding-top: 56px;
+            }
+            .btn-order-pay{
+                width: 100%;
+                background-color: $fourth-color;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                padding: 14px 10px;
+            }
+            .btn-order-pay:hover{
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+                opacity: 0.8;
+                color: $main-color;
+                cursor: pointer;
+            }
         }
     }
 }
